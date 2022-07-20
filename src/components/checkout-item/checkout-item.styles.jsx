@@ -1,4 +1,4 @@
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 
 export const CheckoutItemContainer = styled.div`
 	width: 100%;
@@ -20,16 +20,14 @@ export const ImageContainer = styled.div`
 	}
 `;
 
-export const Detail = styled.span`
+export const BaseSpan = styled.span`
 	width: 23%;
 `;
 
-export const Quantity = styled.span`
+export const Quantity = styled(BaseSpan)`
 	display: flex;
-	value {
-		margin: 0 10px;
-	}
 `;
+
 export const Arrow = styled.div`
 	cursor: pointer;
 `;
